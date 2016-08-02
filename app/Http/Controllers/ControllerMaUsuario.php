@@ -47,6 +47,7 @@ class ControllerMaUsuario extends Controller
     $uuser =User::find($id);
 
     return view('MaUsuario.update',['uuser'=>$uuser]);
+    return 'Prueba';
   }
 
   public function update($id, Request $request)
