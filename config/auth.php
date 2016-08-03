@@ -72,13 +72,13 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => ProyectorRedRojas\User::class,
+            'model' => ProyectoRedRojas\User::class,
         ],
 
         'admins' =>
         [
           'driver' => 'eloquent',
-          'model' => ProyectorRedRojas\mausuarios::class,
+          'model' => ProyectoRedRojas\mausuarios::class,
         ]
 
         // 'users' => [
