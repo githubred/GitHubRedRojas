@@ -21,7 +21,7 @@
             </div>
         </header>
         <div class="container">
-            <div class="g-signin2" type="submit" data-onsuccess="onSignIn"></div>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
             <div class="secure">
                 
                 {!!Form::open(['route'=>'autentificacion.store','method'=>'POST'])!!}
@@ -40,7 +40,6 @@
                     <hr>
                     <center>
                         <button type="submit" id="ingresa">Ingresar</button>
-                        <a href="#"><button type="button">Cancelar</button></a>
                     </center>
                     
                 {!!Form::close()!!}
