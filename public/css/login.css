@@ -1,5 +1,4 @@
 .container{
-    background-color: #fff;
     color: white;
     text-align: center;
 }
@@ -7,9 +6,39 @@
     width: 120px;
     margin: 0 auto;
 }
-body{
+.secure {
+    display: none;
+}
+.panel-heading {
+    font-weight: bold;
+}
+.panel-body{
     background-color: #fff;
 }
-.secure {
-    display: block;
+.login {
+    float: none;
+    margin: 0 auto;
+}
+p {
+    color: #919385;
+    font-family: sans-serif;
+}
+html {
+    height: 100%;
+}
+body {
+    background-color: black;
+    height: 100%;
+}
+.cuerpoLogin {
+    background-image: url("../img/ojos.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.row {    
+    margin: 150px auto 100px 0;
+    text-align: center;
 }
