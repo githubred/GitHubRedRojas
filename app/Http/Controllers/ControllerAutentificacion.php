@@ -6,13 +6,13 @@ use Illuminate\Http\Request;
 use Auth;
 use Session;
 use Redirect;
-use ProyectoRedRojas\mausuarios;
+use ProyectoRedRojas\User;
 use ProyectoRedRojas\Http\Requests;
 use ProyectoRedRojas\Http\Requests\RequestAutentificacion;
 
 class ControllerAutentificacion extends Controller
 {
-  
+
     public function index()
     {
       return view('Autentificacion.principal');
@@ -20,9 +20,9 @@ class ControllerAutentificacion extends Controller
 
     public function store (RequestAutentificacion $request)
     {
-      if(Auth::attempt(['ad_us_segusuarios'=>$request['ad_us_segusuarios'], 'ad_us_segclave'=>$request['ad_us_segclave']]))
+      if(Auth::attempt(['email'=>$request['email'], 'password'=>$request['password']]))
       {
-        return view('principal');
+        return view('Principal.principal');
       }
       else {
       Session::flash('message-error','Datos incorrectos');
