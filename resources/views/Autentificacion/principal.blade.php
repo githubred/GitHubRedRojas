@@ -21,32 +21,51 @@
             </div>
         </header>
         <div class="container">
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Iniciar Sesión</div>
+                            <div class="panel-body">
+                                <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
+                                    {{ csrf_field() }}
+                                    
+                                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                                    <hr/>
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-md-8 col-md-offset-2">
+                                            <button class="btn btn-primary">
+                                                Cancelar
+                                            </button>
+
+                                            <a class="btn btn-link" href="#" onclick="signOut();">¡ Cerrar Sesión !</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
             <div class="secure">
                 
                 {!!Form::open(['route'=>'autentificacion.store','method'=>'POST'])!!}
-
-                    <div class="form-group">
+                   <div class="form-group">
                         <label for="exampleInputEmail1">Email de Usuario</label>
-
-                            {!!Form::text('usuario',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>'Ejemplo@ejemplo.com','class'=>'form-control','id'=>'usuario'])!!}
+                           {!!Form::text('usuario',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>'Ejemplo@ejemplo.com','class'=>'form-control','id'=>'usuario'])!!}
                     </div>
-
-                    <div class="form-group">
+                   <div class="form-group">
                         <label for="exampleInputPassword1">Id</label>
-
-                            {!!Form::password('contra',['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>'Id','class'=>'form-control','id'=>'contra'])!!}
+                           {!!Form::password('contra',['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>'Id','class'=>'form-control','id'=>'contra'])!!}
                     </div>
                     <hr>
                     <center>
                         <button type="submit" id="ingresa">Ingresar</button>
                     </center>
-                    
-                {!!Form::close()!!}
+               {!!Form::close()!!}
             </div>
-            <center>
-                <a href="#"><button type="button">Cancelar</button></a>
-            </center>
             
 
         </div>

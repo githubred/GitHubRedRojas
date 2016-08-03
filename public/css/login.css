@@ -1,5 +1,5 @@
 .container{
-    background-color: gray;
+    background-color: #fff;
     color: white;
     text-align: center;
 }
@@ -11,5 +11,5 @@ body{
     background-color: #fff;
 }
 .secure {
-    display: none;
+    display: block;
 }

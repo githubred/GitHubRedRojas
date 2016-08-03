@@ -24,5 +24,17 @@ function onSignIn(googleUser) {
     inputGmail.value = gmail;
     inputId.value = id;
     
-    document.getElementById('ingresa').click();
+    //document.getElementById('ingresa').click(); //ACTIVAR
+}
+      
+function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+        console.log('User signed out.');
+    });
+    var inputGmail = document.getElementById('usuario');
+    var inputId = document.getElementById('contra');
+    
+    inputGmail.value = '';
+    inputId.value = '';
 }
