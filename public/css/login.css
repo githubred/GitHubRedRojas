@@ -7,7 +7,7 @@
     margin: 0 auto;
 }
 .secure {
-    display: none;
+    display: block;
 }
 .panel-heading {
     font-weight: bold;
@@ -38,7 +38,7 @@ body {
     height: 100%;
 }
 
-.row {    
+.row {
     margin: 150px auto 100px 0;
     text-align: center;
 }

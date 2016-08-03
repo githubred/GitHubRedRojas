@@ -37,9 +37,14 @@
                                         </div>
                                     </div>
                                     <hr/>
-                                    <center>
-                                        <p>Si aún no eres usuario de la red, puedes mandar tu solicitud a ejemplo@gmail.com</p>
-                                    </center>
+
+                                    @if(Session::has('message-error'))
+                                    <div class="alert alert-danger alert-dismissible" role = "alert">
+
+                                        {{Session::get('message-error')}}
+                                    </div>
+                                    @endif
+
                                 </form>
                             </div>
                         </div>
@@ -76,5 +81,10 @@
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <!--js propio-->
         <script type="text/javascript" src="js/login.js"></script>
+        @if(Session::has('message-error'))
+          <script type="text/javascript">
+            changeState();
+          </script>
+        @endif
     </body>
 </html>

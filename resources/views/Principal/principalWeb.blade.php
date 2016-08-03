@@ -7,19 +7,19 @@
         <!--links css y js-->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/index.css">
-        
+
         <!--Google Sing-in-->
         <meta name="google-signin-scope" content="profile email">
         <meta name="google-signin-client_id" content="764218325264-h4c92vhnpj24719d226qdkkilbfvomtm.apps.googleusercontent.com">
         <script src="https://apis.google.com/js/platform.js" async defer></script>
     </head>
-    
+
     <body >
         <!-- =TOP= -->
         <div class="navbar navbar-inverse" role="navigation" id="nav_top">
             <div class="container">
                 <ul class="nav navbar-nav col-xs-5 col-sm-3">
-                    <li><a href="http://localhost:8000/login">Ingresar a la red</a></li>
+                    <li><a href="{{ URL::to('autentificacion') }}">Ingresar a la red</a></li>
                     <!--
                     <div class="g-signin2" data-onsuccess="onSignIn" ></div>
                     <script>
@@ -36,11 +36,11 @@
                         // The ID token you need to pass to your backend:
                         var id_token = googleUser.getAuthResponse().id_token;
                         console.log("ID Token: " + id_token);
-                        
+
                         //var sistema = "http://localhost:8000/main";
-                        
+
                         //location.href = sistema;
-                        
+
                       };
                     </script>
                     -->
@@ -54,10 +54,10 @@
                 </form>
             </div>
         </div>
-        
+
         <!-- =HEADER= -->
         <header class="container" id="header">
-            
+
             <hgroup style="text-align:center">
                 <a href="http://localhost:8000"><img id="logo" src="img/logo.jpg" alt="logoRedOftalmologica"></a>
             </hgroup>
@@ -68,7 +68,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-            
+
                 <nav class="navbar-collapse collapse sidebar-navbar-collapse" role="navigation">
                     <ul class="nav navbar-nav">
                         <li><a href="#" onclick="view(0);">INICIO</a></li>
@@ -113,17 +113,17 @@
                 </nav>
             </nav>
         </header>
-        
+
         <!--Se carga El CONTAINER PARA CADA VISTA-->
         @yield('content')
-        
+
        <!-- =PIE PAGINA= -->
         <footer class="col-xs-12 col-ms-12 col-md-12" id="footer">
             <div class="container  panel-footer">
                 <p>@RedOftalmologicaRojas</p>
             </div>
         </footer>
-        <!--Jquery-->        
+        <!--Jquery-->
         <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
         <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
         <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>

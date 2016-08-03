@@ -25,8 +25,9 @@ class ControllerAutentificacion extends Controller
         return view('Principal.principal');
       }
       else {
-      Session::flash('message-error','Datos incorrectos');
+      Session::flash('message-error','Usuario no registrado.');
       return Redirect::to('/autentificacion');
+
       }
     }
 }
