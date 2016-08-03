@@ -15,12 +15,7 @@
         <script src="https://apis.google.com/js/platform.js" async defer></script>
     </head>
     <body>
-        <header>
-            <div class="container">
-                <h1>INICIAR SESION</h1>
-            </div>
-        </header>
-        <div class="container">
+        <div class="container" id="cuerpoLogin">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
