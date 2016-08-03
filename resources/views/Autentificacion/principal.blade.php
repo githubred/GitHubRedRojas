@@ -65,6 +65,7 @@
                         <button type="submit" id="ingresa">Ingresar</button>
                     </center>
                {!!Form::close()!!}
+
             </div>
 
 
