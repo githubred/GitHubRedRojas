@@ -11,6 +11,7 @@
 |
 */
 /* Routes AUTENTIFICACION DE SISTEMA */
+Route::get('/', 'ControllerVistaWeb@index');
 
 Route::get('autentificacion', 'ControllerAutentificacion@index');
 Route::resource('autentificacion', 'ControllerAutentificacion');
