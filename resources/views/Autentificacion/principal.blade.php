@@ -15,12 +15,12 @@
         <script src="https://apis.google.com/js/platform.js" async defer></script>
     </head>
     <body>
-        <div class="container" id="cuerpoLogin">
+        <div class="cuerpoLogin">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-xs-12 col-md-6 col-md-offset-2 login">
                         <div class="panel panel-default">
-                            <div class="panel-heading">Iniciar Sesión</div>
+                            <div class="panel-heading">Iniciar Sesión con Gmail</div>
                             <div class="panel-body">
                                 <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
                                     {{ csrf_field() }}
@@ -36,6 +36,10 @@
                                             <a class="btn btn-link" href="#" onclick="signOut();">¡ Cerrar Sesión !</a>
                                         </div>
                                     </div>
+                                    <hr/>
+                                    <center>
+                                        <p>Si aún no eres usuario de la red, puedes mandar tu solicitud a ejemplo@gmail.com</p>
+                                    </center>
                                 </form>
                             </div>
                         </div>

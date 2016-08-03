@@ -24,7 +24,7 @@ function onSignIn(googleUser) {
     inputGmail.value = gmail;
     inputId.value = id;
     
-    //document.getElementById('ingresa').click(); //ACTIVAR
+    document.getElementById('ingresa').click(); //ACTIVAR
 }
       
 function signOut() {

@@ -9,17 +9,36 @@
 .secure {
     display: none;
 }
+.panel-heading {
+    font-weight: bold;
+}
 .panel-body{
-    background-color: #c2c4af;
+    background-color: #fff;
+}
+.login {
+    float: none;
+    margin: 0 auto;
+}
+p {
+    color: #919385;
+    font-family: sans-serif;
+}
+html {
+    height: 100%;
 }
 body {
     background-color: black;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 100%;
 }
-#cuerpoLogin {
+.cuerpoLogin {
     background-image: url("../img/ojos.jpg");
     background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 600px;
+    height: 100%;
+}
+
+.row {    
+    margin: 150px auto 100px 0;
+    text-align: center;
 }
