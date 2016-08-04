@@ -14,47 +14,47 @@
 
          <div class="form-group">
              <label for="inputEmail">Apellido Paterno:</label>
-             {!!Form::text('ruc',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Apellido Paterno ','class'=>'form-control'])!!}
+             {!!Form::text('apater',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Apellido Paterno ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
              <label for="inputEmail">Apellido Materno:</label>
-             {!!Form::text('ruc',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Apellido Materno ','class'=>'form-control'])!!}
+             {!!Form::text('amater',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Apellido Materno ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
              <label for="inputEmail">Nombre:</label>
-             {!!Form::text('ruc',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Nombre ','class'=>'form-control'])!!}
+             {!!Form::text('nombre',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Nombre ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
              <label for="inputEmail">Numero de Colegiatura:</label>
-             {!!Form::text('ruc',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Numero de Colegiatura ','class'=>'form-control'])!!}
+             {!!Form::text('nrocol',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Numero de Colegiatura ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
              <label for="inputEmail">Numero de DNI:</label>
-             {!!Form::text('cargo',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' dni ','class'=>'form-control'])!!}
+             {!!Form::text('dni',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' dni ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
              <label for="inputEmail">Fecha Nacimiento:</label>
-             {!!Form::date('fechalta', \Carbon\Carbon::now())!!}
+             {!!Form::date('nacfecha', \Carbon\Carbon::now()->subYears(25))!!}
          </div>
 
          <div class="form-group">
              <label for="inputEmail">Direccion</label>
-             {!!Form::text('direccion',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Direccion ','class'=>'form-control'])!!}
+             {!!Form::text('dirdomi',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Direccion ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
              <label for="inputEmail">Telefono</label>
-             {!!Form::text('fonos',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Telefono ','class'=>'form-control'])!!}
+             {!!Form::text('dirfono',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Telefono ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
              <label for="inputEmail">Celular:</label>
-             {!!Form::text('fonos',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Celular ','class'=>'form-control'])!!}
+             {!!Form::text('dircelu',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Celular ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
@@ -64,7 +64,7 @@
 
          <div class="form-group">
              <label for="inputEmail">Fecha Registro:</label>
-             {!!Form::date('fechalta', \Carbon\Carbon::now())!!}
+             {!!Form::date('fechregi', \Carbon\Carbon::now())!!}
          </div>
 
          <div class="form-group">
@@ -83,11 +83,9 @@
 
 
          <div class="form-group">
-             <label for="inputEmail">Estado</label>
-             {{ Form::select('estado', [
-                'A' => 'Activo',
-                'B' => 'Baja',
-                'S' => 'Suspendido']
+             <label for="inputEmail">Codigo Registrador</label>
+             {{ Form::select('codusre', [
+                Auth::user()->id => Auth::user()->ad_us_codigo ]
              ) }}
          </div>
 

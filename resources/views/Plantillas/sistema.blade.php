@@ -264,7 +264,7 @@
 
                     <div class="dropdown" style="float: right;">
                         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Usuario
+                            {!!Auth::user()->ad_us_segusuarios!!}
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
