@@ -66,9 +66,8 @@
 
          <button type="submit" class="btn btn-primary">Entrar</button>
          <a href="{{ URL::to('usuario') }}">Regresar</a>
+
          {!!Form::close()!!}
 </div>
 <!--3-Cuerpo Formularios Consultas, Registros y Modificaciones-->
 @stop
-
-

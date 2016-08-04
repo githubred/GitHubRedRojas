@@ -7,7 +7,7 @@
     margin: 0 auto;
 }
 .secure {
-    display: block;
+    display: none;
 }
 .panel-heading {
     font-weight: bold;
