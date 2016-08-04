@@ -24,7 +24,7 @@ function onSignIn(googleUser) {
 
     inputGmail.value = gmail;
     inputId.value = id;
-
+    
     if(estado == 0) {
       document.getElementById('ingresa').click(); //ACTIVAR
     }
@@ -36,16 +36,12 @@ function changeState(){
 }
 var windowClose;
 function signOut() {
+    
     if(estado == 1){
-<<<<<<< HEAD
-      window.location.href = "https://accounts.google.com/Logout?hl=es&continue=https://www.google.com.pe/%3Fgfe_rd%3Dcr%26ei%3D_VeiV72WDcWEqQW_opXwBA%26gws_rd%3Dssl%26pli%3D1&timeStmp=1470258930&secTok=.AG5fkS8Ajs2RP68RUilVqHon6-0jDKT_TA";
-      
-=======
         windowClose = window.open("https://accounts.google.com/Logout?hl=es&continue=https://www.google.com.pe/%3Fgfe_rd%3Dcr%26ei%3D_VeiV72WDcWEqQW_opXwBA%26gws_rd%3Dssl%26pli%3D1&timeStmp=1470258930&secTok=.AG5fkS8Ajs2RP68RUilVqHon6-0jDKT_TA", "nuevo", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=500,width=400,height=400" );
         setTimeout(cerrarVentana,5000);
->>>>>>> 9dc1faddafe8c55146335d4957f363205c8ee341
     }
-
+    
     estado = 0;
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
@@ -53,10 +49,9 @@ function signOut() {
     });
     var inputGmail = document.getElementById('usuario');
     var inputId = document.getElementById('contra');
-
+    
     inputGmail.value = '';
     inputId.value = '';
-
 }
 
 function cerrarVentana() {
