@@ -15,6 +15,9 @@ Route::get('/', 'ControllerVistaWeb@index');
 
 Route::get('autentificacion', 'ControllerAutentificacion@index');
 Route::resource('autentificacion', 'ControllerAutentificacion');
+Route::get('/gmailId', function(){
+   return view('Developer/gmailId'); 
+});
 
 /* Routes PRINCIPAL */
 

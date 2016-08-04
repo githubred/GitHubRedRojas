@@ -1,32 +1,16 @@
-html {
-    height: 100%;
-}
 body{
-    background-color: #e1e4e4;
-    height: 100%;
-}
-
-#lado-der {
-    
-    /*propiedades tamaño*/
-    height: 100%;
+    background-color: #e1e4e4;;
 }
 #lado-der{
     top: 50px;
     bottom: 0;
     padding-top: 20px;
     background-color: #fff;
-/*
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-*/
-    height: 100%;
 }
-.container {
-    height: 100%;
-}
-.row {
-    height: 100%;
+
+.form-horizontal .form-group {
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 #lado-der-top, #lado-der-down{
