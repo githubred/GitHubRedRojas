@@ -282,9 +282,6 @@
         </div>
 
         <!--Jquery-->
-        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-
-        <!--Jquery-->
 <!--        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>-->
 
         {!!Html::script('js/jquery-3.1.0.min.js')!!}
