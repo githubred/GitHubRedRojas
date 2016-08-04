@@ -1,12 +1,12 @@
+html {
+    height: 100%;
+}
 body{
-    background-color: #215091;
+    background-color: #e1e4e4;
+    height: 100%;
 }
 
-#lado-izq, #lado-der {
-    border: none;
-    border-width: thin;
-    border-color: black;
-    background-color: transparent;
+#lado-der {
     
     /*propiedades tamaño*/
     height: 100%;
@@ -14,13 +14,23 @@ body{
 #lado-der{
     top: 50px;
     padding-top: 20px;
+    background-color: #fff;
+/*
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+*/
+    height: 100%;
+}
+.container {
+    height: 100%;
+}
+.row {
+    height: 100%;
 }
 
 #lado-der-top, #lado-der-down{
-    border: double;
-    border-width: thin;
-    border-color: #F2F2DA;
-    background-color: white;
+    border-bottom: 1px solid #9ca2b4;
+    background-color: #367dc8;
 }
 
 #lado-izq-menu{
@@ -121,4 +131,34 @@ body{
 .navbar-header
 {
     float:none !important;
+}
+
+/*TABLA*/
+.blank1 {
+    background-color: #fff;
+    border-radius: 4px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+thead tr:nth-child(odd){
+    background: #5f717b;
+    color: #FFFFFF;
+}
+
+tbody tr:nth-child(odd){
+    background: #7094a7;
+    color: #FFFFFF;
+}
+ 
+tbody tr:nth-child(even){
+    background: #ffffff;
+    color: #000000;
+}
+
+.table>tbody>tr>td {
+    vertical-align: middle;
+    padding: 4px;
+    padding-left: 4px;
 }

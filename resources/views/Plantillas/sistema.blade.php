@@ -7,10 +7,10 @@
         <title>Menu Principal</title>
         
         <!--Links y Js de Bootstrap-->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+<!--        <link rel="stylesheet" href="css/bootstrap.min.css">-->
         {!!Html::style('css/bootstrap.min.css')!!}
         <!--Links y js propias-->
-        <link rel="stylesheet" href="css/main.css">
+<!--        <link rel="stylesheet" href="css/main.css">-->
         {!!Html::style('css/main.css')!!}
         
     </head>
@@ -281,17 +281,17 @@
             </div>
         </div>
         <!--Jquery-->        
-        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<!--        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>-->
         {!!Html::script('js/jquery-3.1.0.min.js')!!}
-        <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+<!--        <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>-->
         {!!Html::script('js/jquery-2.2.4.min.js')!!}
-        <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<!--        <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>-->
         {!!Html::script('js/jquery-1.12.4.min.js')!!}
         <!--bootstrap js-->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--        <script type="text/javascript" src="js/bootstrap.min.js"></script>-->
         {!!Html::script('js/bootstrap.min.js')!!}
         <!--own js-->
-        <script type="text/javascript" src="js/main.js"></script>
+        <!--<script type="text/javascript" src="js/main.js"></script>-->
         {!!Html::script('js/main.js')!!}
         
     </body>
