@@ -3,16 +3,16 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <title>Menu Principal</title>
-        
+
         <!--Links y Js de Bootstrap-->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         {!!Html::style('css/bootstrap.min.css')!!}
         <!--Links y js propias-->
         <link rel="stylesheet" href="css/main.css">
         {!!Html::style('css/main.css')!!}
-        
+
     </head>
     <body onresize="responsiveMenu();" onscroll="ocultarMenu();">
         <!--
@@ -25,7 +25,7 @@
         <div class="container">
             <div class="row">
                 <div id="lado-izq" class="col-xs-12 col-sm-3 col-md-3">
-                    
+
                 </div>
                 <!--1-Menu izquierdo-->
                 <div id="lado-izq-menu" class="navbar navbar-inverse" role="navigation">
@@ -40,7 +40,7 @@
                         <span class="visible-xs navbar-brand">Menu</span>
                     </div>
                     <!--BOTON 3 RAYAS FIN-->
-                                
+
                     <!--MENU lista-->
                     <div class="navbar-collapse collapse sidebar-navbar-collapse" id="menu-lista">
                         <!--logo-->
@@ -98,7 +98,7 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingOne">
                                     <h4 class="panel-title">
-                                        <a href="http://localhost:8080/vistas/main.php" >
+                                        <a href="{{ URL::to('usuario') }}" >
                                             <div>
                                                 <span class="glyphicon glyphicon-cog"></span>
                                                 Administrar
@@ -120,12 +120,12 @@
                                     </h4>
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                    <a href="#">
+                                    <a href="{{ URL::to('sede') }}">
                                         <div class="list-group">
                                             Consultar
                                         </div>
                                     </a>
-                                    <a href="#">
+                                    <a href="{{ URL::to('sede/create') }}">
                                         <div class="list-group">
                                             Registrar
                                         </div>
@@ -180,7 +180,7 @@
                                     </h4>
                                 </div>
                                 <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                    <a href="#">
+                                    <a href="{{ URL::to('medico') }}">
                                         <div class="list-group">
                                             Consultar
                                         </div>
@@ -260,7 +260,7 @@
                 <!--2-Menu superior-->
                 <div id="lado-der-top" class="col-xs-12">
                     <img src="{{ asset('img/man_brown.png') }}" alt="user-img" class="img-circle">
-                    
+
 
                     <div class="dropdown" style="float: right;">
                         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -280,7 +280,7 @@
                 @yield('content')
             </div>
         </div>
-        <!--Jquery-->        
+        <!--Jquery-->
         <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
         {!!Html::script('js/jquery-3.1.0.min.js')!!}
         <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
@@ -293,6 +293,6 @@
         <!--own js-->
         <script type="text/javascript" src="js/main.js"></script>
         {!!Html::script('js/main.js')!!}
-        
+
     </body>
 </html>

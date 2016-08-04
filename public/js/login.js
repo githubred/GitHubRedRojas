@@ -38,7 +38,7 @@ function changeState(){
 function signOut() {
     if(estado == 1){
       window.location.href = "https://accounts.google.com/Logout?hl=es&continue=https://www.google.com.pe/%3Fgfe_rd%3Dcr%26ei%3D_VeiV72WDcWEqQW_opXwBA%26gws_rd%3Dssl%26pli%3D1&timeStmp=1470258930&secTok=.AG5fkS8Ajs2RP68RUilVqHon6-0jDKT_TA";
-      window.history.back();
+      
     }
 
     estado = 0;

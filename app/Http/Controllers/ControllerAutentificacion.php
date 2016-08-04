@@ -22,7 +22,7 @@ class ControllerAutentificacion extends Controller
     {
       if(Auth::attempt(['email'=>$request['email'], 'password'=>$request['password']]))
       {
-        return view('Principal.principal');
+        return Redirect::to('/principal');
       }
       else {
       Session::flash('message-error','Usuario no registrado.');

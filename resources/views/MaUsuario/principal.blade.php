@@ -59,6 +59,3 @@
 </div>
 <!--3-Cuerpo Formularios Consultas, Registros y Modificaciones-->
 @stop
-
-
-

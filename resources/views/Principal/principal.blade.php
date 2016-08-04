@@ -1,4 +1,4 @@
-@extends('plantillas.isede')
+@extends('plantillas.sistema')
 @section('content')
 
 <h1>PANEL DE ADMINISTRACION DEL SISTEMA DE LA RED OFTALMOLOGICA</h1>

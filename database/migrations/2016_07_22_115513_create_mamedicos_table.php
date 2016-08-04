@@ -24,10 +24,10 @@ class CreateMamedicosTable extends Migration
           $table->string('pr_dirdomi',100)->nullable(false);
           $table->string('pr_dirfono',12);
           $table->string('pr_dircelu',12);
-          $table->string('pr_diremail',80);
+          $table->string('email',80);
           $table->datetime('pr_fechregi')->nullable(false);
           $table->char('pr_estado',1);
-          $table->string('pr_clave',15);
+          $table->string('password',15);
 
           $table->integer('pr_codusre')->unsigned();
           $table->foreign('pr_codusre')->references('id')->on('users')->onDelete('cascade');

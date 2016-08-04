@@ -37,6 +37,13 @@ Route::resource('usuario','ControllerMaUsuario');
 Route::resource('usuario/create','ControllerMaUsuario@create');
 Route::resource('usuario/edit','ControllerMaUsuario@edit');
 
+/* Routes MA MEDICOS */
+
+Route::get('medico/principal', 'ControllerMaMedico@index');
+Route::resource('medico','ControllerMaMedico');
+Route::resource('medico/create','ControllerMaMedico@create');
+Route::resource('medico/edit','ControllerMaMedico@edit');
+
 
 /* Routes ..... */
 
