@@ -49,51 +49,7 @@
                                 <span style="color:white" class="glyphicon glyphicon-home" aria-hidden="true"></span> Home
                             </a>
                         </div>
-                        <!--ANTIGUO MENU
-                        <ul class="nav navbar-nav">
-                            <li>
-                                <a href="#">
-                                    <span class="glyphicon glyphicon-cog"></span> Administrar
-                                </a>
-                            </li>
-                            <li onclick="showHide(estado, document.getElementById('menuSedes'));">
-                                <a href="#">
-                                    <span class="glyphicon glyphicon-tower"></span>
-                                    Sedes
-                                </a>
-                                <ul class="sub-menu-list nav navbar-nav" style="display: none;"  id="menuSedes">
-                                    <li class="menu-list"><a href="">Consultar</a></li>
-                                    <li class="menu-list"><a href="">Registrar</a></li>
-                                    <li class="menu-list"><a href="">Modificar</a></li>
-                                </ul>
-                            </li>
-                            <li onclick="showHide(estado, document.getElementById('menuPersonal'));">
-                                <a href="#">
-                                    <span class="glyphicon glyphicon-eye-open"></span> Personal
-                                </a>
-                                <ul class="sub-menu-list nav navbar-nav" style="display: none;"  id="menuPersonal">
-                                    <li class="menu-list"><a href="">Consultar</a></li>
-                                    <li class="menu-list"><a href="">Registrar</a></li>
-                                    <li class="menu-list"><a href="">Modificar</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-list">
-                                <a href="#">
-                                    <span class="glyphicon glyphicon-plus"></span> Médicos
-                                </a>
-                            </li>
-                            <li class="menu-list">
-                                <a href="#">
-                                    <span class="glyphicon glyphicon-user"></span> Pacientes
-                                </a>
-                            </li>
-                            <li class="menu-list">
-                                <a href="#">
-                                    <span class="glyphicon glyphicon-list-alt"></span> Historias Clinicas
-                                </a>
-                            </li>
-                        </ul>
-                        -->
+                        
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingOne">
@@ -270,7 +226,7 @@
                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                             <li><a href="#">Perfil</a></li>
                             <li><a href="#">Configuracion</a></li>
-                            <li><a href="#">Salir</a></li>
+                            <li><a href="#" onclick="salir();">Salir</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="#">Ayuda</a></li>
                         </ul>
@@ -295,6 +251,7 @@
         <!--own js-->
         <!--<script type="text/javascript" src="js/main.js"></script>-->
         {!!Html::script('js/main.js')!!}
+        {!!Html::script('js/login.js')!!}
 
     </body>
 </html>

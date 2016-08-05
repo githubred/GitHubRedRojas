@@ -21,22 +21,13 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="img/Imagen36.jpg" alt="...">
-          <div class="carousel-caption">
-            <h1>SLIDE 1</h1>
-          </div>
+          <img src="img/slide1.jpg" alt="...">
         </div>
         <div class="item">
-          <img src="img/Imagen25.jpg" alt="...">
-          <div class="carousel-caption">
-            <h1>SLIDE 2</h1>
-          </div>
+          <img src="img/slide2.jpg" alt="...">
         </div>
           <div class="item">
-          <img src="img/Imagen30.jpg" alt="...">
-          <div class="carousel-caption">
-            <h1>SLIDE 3</h1>
-          </div>
+          <img src="img/slide3.jpg" alt="...">
         </div>
       </div>
 
@@ -53,7 +44,6 @@
     <style rel="stylesheet">
         .carousel img{
             width: 100%;
-            height: 100%;
         }
     </style>
 </div>
@@ -61,18 +51,44 @@
 <div class="container bs-docs-section" id="cuerpo-1" style="display: none">
     <div class="container">         
         <h2>Organización</h2>
-        <h3>¿Quienes Somos?</h3>
-        <p>Somos una organizacion...</p>
+        <br/>
+        <h3>Proyecto Enmarcado</h3>
+        <p>
+        El Fondo para la Innovación, la Ciencia y la Tecnología (FINCyT) es el Programa que administra fondos para la generación de proyectos innovadores, seleccionando, cofinanciando y acompañando técnicamente a los de mayor potencial, promoviendo el desarrollo productivo y fortaleciendo a los actores del sistema nacional de innovación empresarial, el mismo que financia el proyecto Red Médica Informática Oftalmológicos con Protocolos de Atención Especializados para Patologías Oculares de Altura.
+        </p>
+        <br/>
+        <h3>Clínica Oftalmológica del Centro del Perú</h3>
+        <p>
+        La Clínica Oftalmológica del Centro del Perú es una Entidad especializada en Servicios de Salud Ocular, que cuenta con una oferta de valor renovada, con infraestructura médica moderna en tecnología y con todas las facilidades para responder a las necesidades de nuestros pacientes, con procedimientos eficientes que se complementan plenamente con un Staff Médico y Asistencial altamente calificado y comprometido con la salud de nuestros pacientes.
+
+        Buscamos ser reconocidos por la accesibilidad y calidad de nuestros servicios, por ser una Clínica en la que los pacientes y sus familiares puedan tener una experiencia positiva en el cuidado de su salud ocular. Deseamos ser percibidos cerca de ustedes, como un grupo humano de profesionales plenamente comprometidos en el cuidado y prevención y con la tecnología médica más moderna para el diagnóstico y tratamiento que ustedes requieran.
+        </p>
+        <br/>
+        <h3>Objetivo de la Red Oftalmológica</h3>
+        <p>
+        Implementar un Sistema de Información y comunicación de Telemedicina Especializada en Oftalmológica en el Perú, que permita ampliar la cobertura de los servicios de Salud en la Especialidad Oftalmológica y asociados, a través del uso de últimas Tecnologías de Información y Comunicaciones.
+        </p>
     </div>
 </div>
 
 <div class="container bs-docs-section" id="cuerpo-2" style="display: none">
     <div class="container">         
         <h2>Entidades de Salud y Alianzas estrategicas</h2>
-        <h3>Entidades de Salud</h3>
-        <p>Somos una organizacion...</p>
-        <h3>Alianzas estrategicas</h3>
-        <p>Somos una organizacion...</p>
+        <br/>
+        <h3>•	Entidades de Salud</h3>
+        <u>
+            <li>Hospitales</li>
+            <li>Clínicas Regionales y Nacionales</li>
+            <li>Centros de Salud</li>
+        </u>
+        <br/>
+        <h3>•	Alianzas Estratégicas</h3>
+        <u>
+            <li>Clínica Oftalmológica Rojas.</li>
+            <li>Instituto Inca Socrático Rojas.</li>
+            <li>ONG.</li>
+            <li>Universidad Continental</li>
+        </u>
     </div>
 </div>
 

@@ -1,10 +1,8 @@
 @extends('plantillas.sistema')
 @section('content')
-
-<h1>PANEL DE ADMINISTRACION DEL SISTEMA DE LA RED OFTALMOLOGICA</h1>
-  <a href="{{ URL::to('usuario') }}"> Usuarios</a> <br>
-  <a href="{{ URL::to('sede') }}"> Sedes</a> <br>
-  <a href="#"> Medicos</a> <br>
-  <a href="#"> Pacientes</a> <br>
-
+<!--3-Cuerpo Formularios Consultas, Registros y Modificaciones-->
+<div id="lado-der" class="col-xs-12 col-sm-9 col-md-9" onclick="ocultarMenu();" >
+    <h2>BIENVENIDO A LA RED MÉDICA OFTALMOLÓGICA</h2>
+</div>
+<!--3-Cuerpo Formularios Consultas, Registros y Modificaciones-->
 @stop
