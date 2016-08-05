@@ -17,33 +17,9 @@
     <body >
         <!-- =TOP= -->
         <div class="navbar navbar-inverse" role="navigation" id="nav_top">
-            <div class="container" style="text-align: center;">
+            <div class="container">
                 <ul class="nav navbar-nav col-xs-12 col-sm-12">
                     <li><a href="{{ URL::to('autentificacion') }}">Ingresar a la red</a></li>
-                    <!--
-                    <div class="g-signin2" data-onsuccess="onSignIn" ></div>
-                    <script>
-                      function onSignIn(googleUser) {
-                        // Useful data for your client-side scripts:
-                        var profile = googleUser.getBasicProfile();
-                        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-                        console.log('Full Name: ' + profile.getName());
-                        console.log('Given Name: ' + profile.getGivenName());
-                        console.log('Family Name: ' + profile.getFamilyName());
-                        console.log("Image URL: " + profile.getImageUrl());
-                        console.log("Email: " + profile.getEmail());
-
-                        // The ID token you need to pass to your backend:
-                        var id_token = googleUser.getAuthResponse().id_token;
-                        console.log("ID Token: " + id_token);
-
-                        //var sistema = "http://localhost:8000/main";
-
-                        //location.href = sistema;
-
-                      };
-                    </script>
-                    -->
                 </ul>
 
                 <form class="navbar-form navbar-left col-xs-12 col-sm-12" style="color: white; text-align:center;">
@@ -53,7 +29,7 @@
                     </div>
                     <button type="submit" class="btn btn-default col-xs-2">Ir</button>
                     -->
-                    <div><h1>Red Médica Oftalmológica</h1></div>
+                    <div><h1><MARQUEE SCROLLDELAY=100>Red Médica Oftalmológica</MARQUEE></h1></div>
                 </form>
             </div>
         </div>
@@ -74,10 +50,10 @@
 
                 <nav class="navbar-collapse collapse sidebar-navbar-collapse" role="navigation">
                     <ul class="nav navbar-nav">
-                        <li><a href="#" onclick="view(0);">INICIO</a></li>
-                        <li><a href="#" onclick="view(1);">ORGANIZACIÓN</a></li>
-                        <li><a href="#" onclick="view(2);">ENTIDADES DE SALUD Y ALIANZAS</a></li>
-                        <li><a href="#" onclick="view(3);">BANER PUBLICITARIO</a></li>
+                        <li><a href="#uno" name="uno" onclick="view(0);">INICIO</a></li>
+                        <li><a href="#dos" name="dos" onclick="view(1);">ORGANIZACIÓN</a></li>
+                        <li><a href="#tres" name="tres" onclick="view(2);">ENTIDADES DE SALUD Y ALIANZAS</a></li>
+                        <li><a href="#cuatro" name="cuatro" onclick="view(3);">BANER PUBLICITARIO</a></li>
                     </ul>
                     <script type="text/javascript">
                         function view(num){
@@ -121,10 +97,9 @@
         @yield('content')
 
        <!-- =PIE PAGINA= -->
-        
+        <br/>
         <footer class="col-xs-12 col-ms-12 col-md-12" id="footer">
-           <hr/>
-            <div class="container  panel-footer">
+            <div class="container">
                 <p>@RedOftalmologicaRojas</p>
             </div>
         </footer>

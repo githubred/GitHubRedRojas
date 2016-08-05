@@ -66,6 +66,9 @@ border: 0;
 #footer
 {
     bottom: 0;
+    background-color: #222222;
+    padding-top: 20px;
+    color: white;
 }
 
 #cuerpo-0{
@@ -80,8 +83,8 @@ border: 0;
 
 .navbar-default {
     height: auto;
-    background-color: #929bbb;
-    border-color: #929bbb;
+    background-color: #97b4ce;
+    border-color: #c3d4ef;
     border-radius: 0px;
 }
 
@@ -92,6 +95,13 @@ border: 0;
     border-bottom-left-radius: 0px;
     color: white;
     width: 100%;
+}
+.navbar-form {
+    padding: 0;
+}
+
+.navbar-form h1{
+    margin-top: 5px;
 }
 
 
