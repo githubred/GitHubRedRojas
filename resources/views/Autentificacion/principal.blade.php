@@ -49,7 +49,6 @@
                                         {{Session::get('message-error')}}
                                     </div>
                                     @endif
-
                                 </form>
                             </div>
                         </div>
@@ -73,7 +72,7 @@
                     <center>
                         <button type="submit" id="ingresa">Ingresar</button>
                     </center>
-               {!!Form::close()!!}
+                {!!Form::close()!!}
 
             </div>
 
