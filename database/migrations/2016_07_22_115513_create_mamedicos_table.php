@@ -27,7 +27,7 @@ class CreateMamedicosTable extends Migration
           $table->string('email',80);
           $table->datetime('pr_fechregi')->nullable(false);
           $table->char('pr_estado',1);
-          $table->string('password',15);
+          $table->string('password');
 
           $table->integer('pr_codusre')->unsigned();
           $table->foreign('pr_codusre')->references('id')->on('users')->onDelete('cascade');

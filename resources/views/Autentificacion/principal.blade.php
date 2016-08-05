@@ -37,6 +37,11 @@
                                         </div>
                                     </div>
                                     <hr/>
+                                    @if(Session::has('succesful'))
+                                      <script type="text/javascript">
+                                        exit();
+                                      </script>
+                                    @endif
 
                                     @if(Session::has('message-error'))
                                     <div class="alert alert-danger alert-dismissible" role = "alert">

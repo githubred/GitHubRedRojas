@@ -19,9 +19,13 @@ class CreateMaadministrativoasistencialsTable extends Migration
           $table->string('ad_amater',20)->nullable(false);
           $table->string('ad_nombre',20)->nullable(false);
           $table->char('ad_dni',8)->nullable(false);
+          $table->string('email',80);
+          $table->string('password');
+          $table->char('ad_estado',1)->nullable(false);
+
           $table->integer('pr_codusre')->unsigned();
           $table->foreign('pr_codusre')->references('id')->on('users')->onDelete('cascade');
-          $table->char('ad_estado',1)->nullable(false);
+
           $table->timestamps();
         });
     }

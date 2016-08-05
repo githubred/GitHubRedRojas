@@ -60,7 +60,6 @@ class ControllerMaMedico extends Controller
   {
 
     $ma_medico =mamedico::find($id);
-    $ma_medico ->pr_codigo       = $request->codigo;
     $ma_medico ->pr_apater       = $request->apater;
     $ma_medico ->pr_amater       = $request->amater;
     $ma_medico ->pr_nombre       = $request->nombre;
@@ -70,15 +69,11 @@ class ControllerMaMedico extends Controller
     $ma_medico ->pr_dirdomi      = $request->dirdomi;
     $ma_medico ->pr_dirfono      = $request->dirfono;
     $ma_medico ->pr_dircelu      = $request->dircelu;
-    $ma_medico ->email           = $request->email;
-    $ma_medico ->pr_fechregi     = $request->fechregi;
     $ma_medico ->pr_estado       = $request->estado;
-    $ma_medico ->password        = $request->password;
-    $ma_medico ->pr_codusre      = $request->codusre;
     $ma_medico -> save();
 
     Session::flash('message', 'Sede editada correctamente.');
-    return Redirect::to('/sede');
+    return Redirect::to('/medico');
 
   }
 }

@@ -2,39 +2,39 @@
 @section('content')
 <!--3-Cuerpo Formularios Consultas, Registros y Modificaciones-->
 <div id="lado-der" class="col-xs-12 col-sm-9 col-md-9" onclick="ocultarMenu();" >
-    <h3 class="blank1">Registro de Sedes a la Red Oftalmologica</h3>
+    <h3 class="blank1">Editar el Medico: {{$mamedicos->pr_nombre}} {{$mamedicos->pr_apater}} de la Red Oftalmologica</h3>
 
-  {!!Form::model($sedes,['route'=>['mamedico.update', $mamedicos->id],'method'=>'PUT','role'=>'form','enctype'=>'multipart/form-data', 'class'=>'form-horizontal'])!!}
+  {!!Form::model($mamedicos,['route'=>['medico.update', $mamedicos->id],'method'=>'PUT','role'=>'form','enctype'=>'multipart/form-data', 'class'=>'form-horizontal'])!!}
 
          <div class="form-group">
              <label for="inputEmail">CODIGO:</label>
-             {!!Form::text('codigo',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Codigo ','class'=>'form-control'])!!}
+             {!!Form::text('codigo',$mamedicos->pr_codigo,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Codigo ','class'=>'form-control'])!!}
 
          </div>
 
          <div class="form-group">
              <label for="inputEmail">Apellido Paterno:</label>
-             {!!Form::text('apater',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Apellido Paterno ','class'=>'form-control'])!!}
+             {!!Form::text('apater',$mamedicos->pr_apater,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Apellido Paterno ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
              <label for="inputEmail">Apellido Materno:</label>
-             {!!Form::text('amater',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Apellido Materno ','class'=>'form-control'])!!}
+             {!!Form::text('amater',$mamedicos->pr_amater,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Apellido Materno ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
              <label for="inputEmail">Nombre:</label>
-             {!!Form::text('nombre',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Nombre ','class'=>'form-control'])!!}
+             {!!Form::text('nombre',$mamedicos->pr_nombre,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Nombre ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
              <label for="inputEmail">Numero de Colegiatura:</label>
-             {!!Form::text('nrocol',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Numero de Colegiatura ','class'=>'form-control'])!!}
+             {!!Form::text('nrocol',$mamedicos->pr_nrocol,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Numero de Colegiatura ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
              <label for="inputEmail">Numero de DNI:</label>
-             {!!Form::text('dni',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' dni ','class'=>'form-control'])!!}
+             {!!Form::text('dni',$mamedicos->pr_dni,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' dni ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
@@ -44,27 +44,27 @@
 
          <div class="form-group">
              <label for="inputEmail">Direccion</label>
-             {!!Form::text('dirdomi',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Direccion ','class'=>'form-control'])!!}
+             {!!Form::text('dirdomi',$mamedicos->pr_dirdomi,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Direccion ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
              <label for="inputEmail">Telefono</label>
-             {!!Form::text('dirfono',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Telefono ','class'=>'form-control'])!!}
+             {!!Form::text('dirfono',$mamedicos->pr_dirfono,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Telefono ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
              <label for="inputEmail">Celular:</label>
-             {!!Form::text('dircelu',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Celular ','class'=>'form-control'])!!}
+             {!!Form::text('dircelu',$mamedicos->pr_dircelu,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Celular ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
                  <label for="inputEmail">Email:</label>
-                 {!!Form::email('email',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' ejemplo@gmail.com ','class'=>'form-control'])!!}
+                 {!!Form::email('email',$mamedicos->email,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' ejemplo@gmail.com ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
              <label for="inputEmail">Fecha Registro:</label>
-             {!!Form::date('fechregi', \Carbon\Carbon::now())!!}
+             {!!Form::text('email',$mamedicos->pr_fechregi,['required'=>' ','disabled'=>'disabled','autocomplete'=>'off', 'placeholder' =>' ejemplo@gmail.com ','class'=>'form-control'])!!}
          </div>
 
          <div class="form-group">
@@ -72,20 +72,14 @@
              {{ Form::select('estado', [
                 'A' => 'Activo',
                 'B' => 'Baja',
-                'S' => 'Suspendido']
+                'S' => 'Suspendido'],$mamedicos->pr_estado
              ) }}
          </div>
 
          <div class="form-group">
-                 <label for="inputEmail">ID-Gmail</label>
-                 {!!Form::password('password',null,['required'=>' ', 'autocomplete'=>'off', 'placeholder' =>' Id gmail ','class'=>'form-control'])!!}
-         </div>
-
-
-         <div class="form-group">
              <label for="inputEmail">Codigo Registrador</label>
              {{ Form::select('codusre', [
-                Auth::user()->id => Auth::user()->ad_us_codigo ]
+                Auth::user()->id => Auth::user()->ad_us_codigo ],$mamedicos->pr_codusre
              ) }}
          </div>
 
