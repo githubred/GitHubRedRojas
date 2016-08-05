@@ -16,7 +16,7 @@ Route::get('/', 'ControllerVistaWeb@index');
 Route::get('autentificacion', 'ControllerAutentificacion@index');
 Route::resource('autentificacion', 'ControllerAutentificacion');
 Route::get('/gmailId', function(){
-   return view('Developer/gmailId'); 
+   return view('Developer/gmailId');
 });
 
 /* Routes PRINCIPAL */
@@ -39,6 +39,14 @@ Route::get('usuarios/principal', 'ControllerMaUsuario@index');
 Route::resource('usuario','ControllerMaUsuario');
 Route::resource('usuario/create','ControllerMaUsuario@create');
 Route::resource('usuario/edit','ControllerMaUsuario@edit');
+
+
+/* Routes MA ADMINISTRATIVOS */
+
+Route::get('administrativo/principal', 'ControllerMaAdministrativos@index');
+Route::resource('administrativo','ControllerMaAdministrativos');
+Route::resource('administrativo/create','ControllerMaAdministrativos@create');
+Route::resource('administrativo/edit','ControllerMaAdministrativos@edit');
 
 /* Routes MA MEDICOS */
 

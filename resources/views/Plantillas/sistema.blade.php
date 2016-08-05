@@ -150,7 +150,7 @@
                                     </h4>
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                    <a href="#">
+                                    <a href="{{ URL::to('administrativo') }}">
                                         <div class="list-group">
                                             Consultar
                                         </div>

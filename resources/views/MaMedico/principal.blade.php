@@ -42,7 +42,7 @@
               <td>{{$mamedico->pr_dircelu}}</td>
               <td>{{$mamedico->pr_estado}}</td>
               <td>
-                {!!link_to_route('medico.edit', $title = 'Editar', $parameters = $sede->id, $attributes = ['class'=>'btn btn-primary'])!!}
+                {!!link_to_route('medico.edit', $title = 'Editar', $parameters = $mamedico->id, $attributes = ['class'=>'btn btn-primary'])!!}
 
 
               </td>
