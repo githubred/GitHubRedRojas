@@ -40,6 +40,13 @@ Route::resource('usuario','ControllerMaUsuario');
 Route::resource('usuario/create','ControllerMaUsuario@create');
 Route::resource('usuario/edit','ControllerMaUsuario@edit');
 
+/* Routes MA PACIENTES */
+
+Route::get('paciente/principal', 'ControllerMaPaciente@index');
+Route::resource('paciente','ControllerMaPaciente');
+Route::resource('paciente/create','ControllerMaPaciente@create');
+Route::resource('paciente/edit','ControllerMaPaciente@edit');
+
 
 /* Routes MA ADMINISTRATIVOS */
 

@@ -30,13 +30,8 @@ class CreateMapacientesTable extends Migration
             $table->string('pa_dircelu',12)->nullable(true);
             $table->date('pa_fechinsc')->nullable(false);
             $table->date('pa_fechregi')->nullable(false);
-
-            $table->integer('pr_codusre')->unsigned();
-            $table->foreign('pr_codusre')->references('id')->on('users')->onDelete('cascade');
-
-
+            $table->char('pr_codusre',10)->nullable(false);
             $table->char('pa_estado',1)->nullable(false);
-            $table->string('pa_clave',15)->nullable(true);
             $table->timestamps();
 
 
