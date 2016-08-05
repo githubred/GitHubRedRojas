@@ -72,7 +72,7 @@ class ControllerMaMedico extends Controller
     $ma_medico ->pr_estado       = $request->estado;
     $ma_medico -> save();
 
-    Session::flash('message', 'Sede editada correctamente.');
+    Session::flash('message', 'Medico editado correctamente.');
     return Redirect::to('/medico');
 
   }

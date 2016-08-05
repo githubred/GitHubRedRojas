@@ -49,7 +49,7 @@
                                 <span style="color:white" class="glyphicon glyphicon-home" aria-hidden="true"></span> Home
                             </a>
                         </div>
-                        
+
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingOne">
@@ -111,7 +111,7 @@
                                             Consultar
                                         </div>
                                     </a>
-                                    <a href="#">
+                                    <a href="{{ URL::to('administrativo/create') }}">
                                         <div class="list-group">
                                             Registrar
                                         </div>
@@ -141,7 +141,7 @@
                                             Consultar
                                         </div>
                                     </a>
-                                    <a href="#">
+                                    <a href="{{ URL::to('medico/create') }}">
                                         <div class="list-group">
                                             Registrar
                                         </div>
@@ -166,12 +166,12 @@
                                     </h4>
                                 </div>
                                 <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                                    <a href="#">
+                                    <a href="{{ URL::to('paciente') }}">
                                         <div class="list-group">
                                             Consultar
                                         </div>
                                     </a>
-                                    <a href="#">
+                                    <a href="{{ URL::to('paciente/create') }}">
                                         <div class="list-group">
                                             Registrar
                                         </div>
