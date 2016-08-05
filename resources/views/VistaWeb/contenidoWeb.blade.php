@@ -45,6 +45,9 @@
         .carousel img{
             width: 100%;
         }
+        #carousel-example-generic {
+            padding: 0;
+        }
     </style>
 </div>
 

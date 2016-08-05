@@ -1,6 +1,10 @@
-background
+body
 {
-    background-color: #ffffff;
+    background-color: #bddebc;;
+}
+
+body p{
+    font-family: 'Open Sans';
 }
 
 #nav_top
@@ -44,6 +48,7 @@ border: 0;
 #header .navbar-collapse .nav a
 {
     color: black;
+    font-family: 'Roboto';
 }
 
 #header .nav a:hover
@@ -83,8 +88,8 @@ border: 0;
 
 .navbar-default {
     height: auto;
-    background-color: #97b4ce;
-    border-color: #c3d4ef;
+    background-color: #d3e2cf;
+    border-color: #dbdfea;
     border-radius: 0px;
 }
 
@@ -102,9 +107,40 @@ border: 0;
 
 .navbar-form h1{
     margin-top: 5px;
+    font-family: 'Montserrat';
+    color: white;
 }
 
-
+/*FOOTER*/
+.redes {
+    float: right;
+}
+.redes img {
+    width: 40px;
+    height: 40px;
+}
+.redes img:hover{
+    opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/*FOOTER FIN*/
 
 
 

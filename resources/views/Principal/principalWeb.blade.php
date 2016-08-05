@@ -12,6 +12,11 @@
         <meta name="google-signin-scope" content="profile email">
         <meta name="google-signin-client_id" content="764218325264-h4c92vhnpj24719d226qdkkilbfvomtm.apps.googleusercontent.com">
         <script src="https://apis.google.com/js/platform.js" async defer></script>
+        
+        <!--Fuentes-->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     </head>
 
     <body >
@@ -29,7 +34,7 @@
                     </div>
                     <button type="submit" class="btn btn-default col-xs-2">Ir</button>
                     -->
-                    <div><h1><MARQUEE SCROLLDELAY=100>Red Médica Oftalmológica</MARQUEE></h1></div>
+                    <div><a href=""><h1><MARQUEE SCROLLDELAY=100>Red Médica Oftalmológica</MARQUEE></h1></a></div>
                 </form>
             </div>
         </div>
@@ -50,10 +55,10 @@
 
                 <nav class="navbar-collapse collapse sidebar-navbar-collapse" role="navigation">
                     <ul class="nav navbar-nav">
-                        <li><a href="#uno" name="uno" onclick="view(0);">INICIO</a></li>
-                        <li><a href="#dos" name="dos" onclick="view(1);">ORGANIZACIÓN</a></li>
-                        <li><a href="#tres" name="tres" onclick="view(2);">ENTIDADES DE SALUD Y ALIANZAS</a></li>
-                        <li><a href="#cuatro" name="cuatro" onclick="view(3);">BANER PUBLICITARIO</a></li>
+                        <li><a id="uno" href="#" name="uno" onclick="view(0);">INICIO</a></li>
+                        <li><a id="dos" href="#" name="dos" onclick="view(1);">ORGANIZACIÓN</a></li>
+                        <li><a id="tres" href="#" name="tres" onclick="view(2);">ENTIDADES DE SALUD Y ALIANZAS</a></li>
+                        <!--<li><a href="#cuatro" name="cuatro" onclick="view(3);">BANER PUBLICITARIO</a></li>-->
                     </ul>
                     <script type="text/javascript">
                         function view(num){
@@ -67,18 +72,28 @@
                                     menu1.style = "display: none;";
                                     menu2.style = "display: none;";
                                     menu3.style = "display: none;";
+                                    $('html,body').animate({
+                                        scrollTop: $("#uno").offset().top
+                                    }, 1000);
                                     break;
+                                    
                                 case 1:
                                     menu0.style = "display: none;";
                                     menu1.style = "display: block;";
                                     menu2.style = "display: none;";
                                     menu3.style = "display: none;";
+                                    $('html,body').animate({
+                                        scrollTop: $("#dos").offset().top
+                                    }, 1000);
                                     break;
                                 case 2:
                                     menu0.style = "display: none;";
                                     menu1.style = "display: none;";
                                     menu2.style = "display: block;";
                                     menu3.style = "display: none;";
+                                    $('html,body').animate({
+                                        scrollTop: $("#tres").offset().top
+                                    }, 1000);
                                     break;
                                 case 3:
                                     menu0.style = "display: none;";
@@ -99,8 +114,30 @@
        <!-- =PIE PAGINA= -->
         <br/>
         <footer class="col-xs-12 col-ms-12 col-md-12" id="footer">
+            <div class="container info">
+                <h3>Información de la Organización</h3>
+                <ul>
+                    <p>Jr. Rossemberg 427, El Tambo - Huancayo</p>
+                    <p>Correo: oftalmorojas@hotmail.com</p>
+                    <p>Telefono: 064-247243</p> 
+                    <p>Celular: #988770003 - 964968980</p>
+                </ul>
+            </div>
+            
             <div class="container">
-                <p>@RedOftalmologicaRojas</p>
+                <div class="col-xs-12 col-sm-9 col-md-9" style="padding: 0; padding-top:20px; color: #525861;bottom:0">
+                    <p>
+                        Copyright 2016 Clinica Oftalmológica Rojas del Centro del Perú.
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="redes" style="float: right">
+                        <a href="https://www.facebook.com/oftalmo.rojas"><img src="img/redes/facebook.png" alt="facebook"></a>
+                        <a href=""><img src="img/redes/twitter.png" alt="facebook"></a>
+                        <a href=""><img src="img/redes/youtube.png" alt="facebook"></a>
+                    </div>
+                </div>
+                
             </div>
         </footer>
         <!--Jquery-->
